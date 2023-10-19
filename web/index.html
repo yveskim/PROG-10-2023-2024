@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules\bootstrap\dist\css\bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules\bootstrap-icons\font\bootstrap-icons.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-header">
+          <h4>
+            <i
+              class="bi bi-android2 text-success"
+              style="margin-right: 1rem; font-size: 3rem"></i
+            >Phone Details 2023
+          </h4>
+        </div>
+        <div class="card-body">
+          <form id="phonesForm">
+            <div class="row">
+              <div class="col-lg-12 mb-2">
+                <label for="" class="form-label">Model</label>
+                <input type="text" class="form-control" id="model" />
+              </div>
+              <div class="col-lg-12 mb-2">
+                <label for="" class="form-label">Brand</label>
+                <input type="text" class="form-control" id="brand" />
+              </div>
+              <div class="col-lg-12 mb-2">
+                <label for="" class="form-label">RAM</label>
+                <select id="ram" class="form-select">
+                  <option value="">-</option>
+                  <option value="4">4</option>
+                  <option value="8">8</option>
+                  <option value="16">16</option>
+                  <option value="32">32</option>
+                  <option value="64">64</option>
+                </select>
+              </div>
+              <div class="col-lg-12 mb-2">
+                <label for="" class="form-label">ROM</label>
+                <select id="rom" class="form-select">
+                  <option value="">-</option>
+                  <option value="64">64</option>
+                  <option value="128">128</option>
+                  <option value="256">256</option>
+                  <option value="512">512</option>
+                  <option value="1000">1000</option>
+                </select>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-lg-12">
+                <input
+                  type="submit"
+                  value="SUBMIT"
+                  class="form-control btn btn-primary" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table table-bordered table-striped table-warning">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Brand</th>
+                <th>RAM</th>
+                <th>ROM</th>
+              </tr>
+            </thead>
+            <tbody id="phoneTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

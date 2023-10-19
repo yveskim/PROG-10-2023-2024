@@ -1,0 +1,22 @@
+{
+  "samplePhone": [
+    {
+      "model": "Galaxy S23 Ultra",
+      "brand": "Samsung",
+      "ram": 16,
+      "rom": 256
+    },
+    {
+      "model": "Techno Camon20 5G",
+      "brand": "Techno",
+      "ram": 16,
+      "rom": 256
+    },
+    {
+      "model": "Iphone 14 Pro Max",
+      "brand": "Apple",
+      "ram": 24,
+      "rom": 512
+    }
+  ]
+}
